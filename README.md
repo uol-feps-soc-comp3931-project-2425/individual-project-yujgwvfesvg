@@ -1,4 +1,4 @@
-# Graph Hyperbolicity Calculator [Or Your Preferred Project Name]
+# Graph Hyperbolicity Calculator
 
 A C++/Qt application designed to calculate the hyperbolicity of graphs. It features a graphical user interface (GUI) for loading graph datasets, executing calculations, and viewing the results. The project implements several graph algorithms relevant to hyperbolicity analysis.
 ![1main](https://github.com/user-attachments/assets/616960aa-3e69-4892-82b9-b54a53e93e1e)
@@ -8,11 +8,7 @@ A C++/Qt application designed to calculate the hyperbolicity of graphs. It featu
 
 * **Graphical User Interface:** Built with Qt Widgets for user interaction.
 * **Graph Parsing:** Loads graph data from files (specify formats if known, e.g., edge lists, adjacency lists).
-* **Hyperbolicity Calculation:** Core functionality to compute graph hyperbolicity delta values.
-* **Supporting Algorithms:** Includes implementations for:
-    * Shortest Path calculations (e.g., BFS/Dijkstra)
-    * 2-Factor Approximation Algorithm
-    * Logarithmic Approximation Algorithm
+* **Hyperbolicity Calculation:** Core functionality to compute graph hyperbolicity delta values via 3 different methods.
 * **Cross-Platform:** Designed to build and run on macOS, Linux, and Windows (with correct dependencies).
 * **Parallelism:** Utilizes OpenMP for potential performance improvements in calculations.
 * **Modern C++:** Written using C++17 standards.
@@ -23,10 +19,7 @@ Before building, ensure you have the following installed:
 
 * **Git:** For cloning the repository.
 * **Make:** A build automation tool (usually included with development toolchains).
-* **C++17 Compliant Compiler:**
-    * **macOS:** Xcode Command Line Tools (provides Clang). Install via `xcode-select --install`.
-    * **Linux:** GCC or Clang (e.g., via `build-essential` on Debian/Ubuntu, `base-devel` on Arch, or `Development Tools` group on Fedora).
-    * **Windows:** Visual Studio (2017 or later, with C++ workload) or a recent version of MinGW-w64.
+* **C++17 Compliant Compiler:** A C++ compiler is a prerequisite as our functionality is implemented in the C++ language.
 * **Qt Framework (Qt 5 or Qt 6 recommended):** Requires Core, GUI, and Widgets modules.
     * **macOS:** **Crucial:** Install using **Homebrew**: `brew install qt` (latest), `qt@6`, or `qt@5`. The project file relies on Homebrew paths.
     * **Linux (Debian/Ubuntu):** `sudo apt update && sudo apt install build-essential qtbase5-dev qttools5-dev` (or `qt6-base-dev`, etc.).
