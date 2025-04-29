@@ -1,0 +1,2 @@
+trip_id,start_time,end_time,headway_secs,exact_times
+VJa3e423ee12b247f343c45e27aaeb10e11f467c1e,09:37:00,14:38:00,3600,1
