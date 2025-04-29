@@ -94,7 +94,7 @@ Navigate to the `src` directory (if not already there) where the application was
     # Make sure you are in the src directory
     ./hyperbolicity
     ```
-    *(You might need to make it executable first: `chmod +x hyperbolicity`)*
+   
 
 * **Windows:**
     An executable named `hyperbolicity.exe` will be created (potentially inside a `debug` or `release` subfolder within `src`, depending on your Qt/compiler setup). Launch it from the command prompt or PowerShell:
@@ -108,6 +108,14 @@ Navigate to the `src` directory (if not already there) where the application was
 
 1.  Launch the application using the platform-specific instructions above.
 2.  Use the GUI menu options (e.g., File > Open) to load a graph data file. Supported formats likely include [mention formats like edge lists (.txt), etc., if you know them]. Example datasets can be found in the `validation datasets/` and `real world datasets/` directories.
-3.  Utilize the interface elements (buttons, input fields) to trigger hyperbolicity calculations and view the results. [Add more specific steps if desired].
+3.  Utilize the interface elements (buttons, input fields) to trigger hyperbolicity calculations and view the results.
+
+Below is a screenshot of an input graph with hyperbolicity computation using two different methods.
+![2main](https://github.com/user-attachments/assets/269fe7f1-1799-4366-87d8-30492cab8bd5)
+
 
 ## Project Structure
+The project consists of the core implementations of the algoithms. On top of the core implementations, we have 3 datasets included within the project that can be uploaded directly to our application for computation. 
+1.   Validation Dataset: These are the CSV files that make up the validation test for the project.
+2.   Real World Dataset: These are the CSV representations of two real worls networks, namely West Yorkshire Bus Network, and Bitcoin Transaction Network. It also includes the python scripts that were used to compile these datasets.
+3.   Evaluation Dataset: These are the CSV files representing the graphs of various sizes (vertices) that we used to evaluate the performance of the different algorithms.
