@@ -1,9 +1,8 @@
 # Graph Hyperbolicity Calculator [Or Your Preferred Project Name]
 
 A C++/Qt application designed to calculate the hyperbolicity of graphs. It features a graphical user interface (GUI) for loading graph datasets, executing calculations, and viewing the results. The project implements several graph algorithms relevant to hyperbolicity analysis.
+![1main](https://github.com/user-attachments/assets/616960aa-3e69-4892-82b9-b54a53e93e1e)
 
-![Screenshot Placeholder](placeholder.png)
-*Optional: Replace `placeholder.png` with an actual screenshot of your application's GUI after uploading the image to your repository.*
 
 ## Features
 
