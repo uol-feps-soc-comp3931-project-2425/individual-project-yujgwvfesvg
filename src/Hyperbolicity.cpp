@@ -38,15 +38,12 @@ std::vector<std::vector<double>> HyperbolicityCalculator::gromov_product_matrix(
             double di_j = distances[i][j];
 
             // Check if ALL relevant distances are finite
-            if (!std::isinf(dr_i) && !std::isinf(dr_j) && !std::isinf(di_j))
+            if ((dr_i)!=INF && (dr_j)!=INF && (di_j)!=INF)
             {
                 // If all finite, compute the Gromov product
                 A[i][j] = 0.5 * (dr_i + dr_j - di_j);
                 // Optional: check for NaN result from potential 0*INF if distances were non-numeric?
-                if(std::isnan(A[i][j])) {
-                    // Decide how to handle NaN result - maybe treat as disconnection?
-                    A[i][j] = -INF; // Or std::numeric_limits<double>::quiet_NaN();
-                }
+                
             }
             else
             {
@@ -98,8 +95,7 @@ double HyperbolicityCalculator::compute_for_base(int r) {
             double a_sq_ij = A_sq[i][j];
 
             
-            if (!std::isinf(a_ij) && !std::isinf(a_sq_ij) &&
-                !std::isnan(a_ij) && !std::isnan(a_sq_ij))
+            if ((a_ij)!=INF && (a_sq_ij)!=INF)
             {
 
                 max_delta = std::max(max_delta, a_sq_ij - a_ij);
