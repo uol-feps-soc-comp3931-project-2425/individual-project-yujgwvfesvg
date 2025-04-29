@@ -35,7 +35,7 @@ Before building, ensure you have the following installed:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories)
+    git clone the repository
     cd [repository folder name]
     ```
 
